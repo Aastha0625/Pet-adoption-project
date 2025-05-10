@@ -1,0 +1,442 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gloria+Hallelujah&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>PetSpace</title>
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="petList">
+    
+    <!-- Container to wrap everything -->
+    <div id="container">
+        <!-- Brand of website -->
+            <header>
+                <div class="main-header">
+                    
+
+                        
+            
+                     <nav class="main-menu">
+                        <ul>
+                            <Li><a href="Welcome.html"> Welcome</a></Li>
+                            <li><a href="Home.html">Home</a></li>
+                            <li class="active"><a href="petList.html">Find a pet</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav> <!-- End of main nav -->
+                </div>
+            </header>
+
+        <!-- Main content -->
+        <main>
+            <!-- <img src="images/group-pets-2.jpg" alt="group of pets" width="70%" height="auto" class="hero-img"> -->
+            <!-- <hr width="50%"> -->
+            <div>
+                <h1>Happy Pet Adoption!</h1>
+                <hr width="50px" align="left">
+                <p>There are not just dogs but many others in search of their caring owners. So, hang tight! </p>
+            </div>
+
+            <div id="pet-gallery-container">
+                <ul id="petGallery">
+                    <-- <li id="photo1">
+                        <img src="https://i.pinimg.com/originals/d0/da/2e/d0da2e992eba124d1ce47f9ab3227b42.png" alt="Dog image" height="400" width="400">
+                        <h2>Name: Luffy</h2>
+                        <h3>Breed: Labrador retriever</h3>
+                        <p>Sex: Male</p>
+                        <p>Rescue: Found near subway injured by other pets</p>
+                    </li>
+                    <li id="photo2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRGNFzR_fBe0KGPEjmuHJ-2l7LV7HAhLkhLhexZfwHIQf0kayjp_Eb_uibCHuV8VDT9I8&usqp=CAU" alt="Dog image"height="400"width="400">
+                        <h2>Name: Sherfi</h2>
+                        <h3>Breed: Jack Rusell</h3>
+                        <p>Sex: Female</p>
+                        <p>Rescue: Main bus stand road hit by a vehicle</p>
+                    </li>
+                    <li id="photo3">
+                        <img src="https://www.petful.com/wp-content/uploads/2016/10/Beagle-e1587511922360-750x531.jpg" alt="Dog image"height="400"width="400">
+                        <h2>Name: Sheru</h2>
+                        <h3>Breed: Beagle</h3>
+                        <p>Sex: Male</p>
+                        <p>Rescue: Found with skin infection</p>
+                    </li>
+                    <li id="photo4">
+                        <img src="https://res.cloudinary.com/petrescue/image/upload/c_crop,g_custom/v1598315017/ul4uxmbk6nzyg0662920.jpg" alt="Cat image"height="400" width="400">
+                        <h2>Name: Miki</h2>
+                        <h3>Breed: American Bobtail</h3>
+                        <p>Sex: Female</p>
+                        <p>Rescue: Found in dustbin near railway station</p>
+                    </li>
+                    <li id="photo5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxblrsXrcLjQn37n38vam3oCp8c4BeED_x_MBz9sHWo0SkkhDP8oEf1lMn7MSzaJnyU&usqp=CAU" alt="Cat image"height="400" width="400">
+                        <h2>Name: Tom </h2>
+                        <h3>Breed: Persian Cat</h3>
+                        <p>Sex: Male</p>
+                        <p>Rescue: Given by an owner after being diagnosed with a cat disease</p>
+                    </li>
+                    <li id="photo6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9UO7jidVOAy0G6M8pYt-XV3XgdOfRcEcrULyL0ibRBm_OCMs-acEjR2Bc30MMN3WPvk&usqp=CAU" alt="Parrot image"height="400" width="400">
+                        <h2>Name: Levi</h2>
+                        <h3>Breed: Psittacua Krameri</h3>
+                        <p>Sex: Female</p>
+                        <p>Rescue: Saved from cats</p>
+                    </li>
+                    <li id="photo7">
+                        <img src="https://www.thepetexpress.co.uk/blog-admin/wp-content/uploads/2012/05/shutterstock_722171287.jpg" alt="Rabbit image"height="400" width="400">
+                        <h2>Name: Bunny</h2>
+                        <h3>Breed: Angora rabbit</h3>
+                        <p>Sex: Female</p>
+                        <p>Rescue: Found hurt by fences</p>
+                    </li>
+                    <li id="photo7">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Feral_pigeon_%28Columba_livia_domestica%29%2C_2017-05-27.jpg" alt="Pigeon image"height="400" width="400">
+                        <h2>Name: Kuku</h2>
+                        <h3>Breed: Rock Pigeon </h3>
+                        <p>Sex: Female</p>
+                        <p>Rescue: Found with wounded wings </p>
+                        <div class='description'>
+                            <p>Description</p>
+                        </div> 
+                    </li> -->
+                </ul>
+    
+                <!-- Info box content -->
+                <div id="info-box">
+                    <h2 id="pet-name"></h2>
+                    <p id="more-info"></p>
+                    <p id="close-link">Click This To Close</p>
+                </div>
+
+                <div class="backdrop"></div>
+                
+                <div class="box">
+                    <div class="close">x</div>
+                </div>
+            </div>
+AND MANY MORE WAITING EAGERLY FOR YOU....
+        </main> <!-- End of main content -->
+
+    </div>   <!-- End container -->
+
+    <!-- Footer info -->
+    <footer>Made with ❤ by Meteors <br> &copy; Copyright 2023</footer>
+
+    <script src="js/pet_gallery.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gloria+Hallelujah&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>body {
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    * {
+        z-index: 2;
+    }
+    
+    /* Header */
+    header {
+        width: 100%;
+        min-height: 400px;
+        padding-top: 3em;
+    }
+    
+    /* Main */
+    main {
+        width: 1024px; 
+        margin: 0 auto;    
+    }
+    
+    /*_________________ Home + PetList + Contact Hero images _____________*/
+    
+    #home header {
+        background: url(https://t3.ftcdn.net/jpg/04/81/85/46/360_F_481854656_gHGTnBscKXpFEgVTwAT4DL4NXXNhDKU9.jpg) center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size:contain;
+    }
+    
+    #petList header {
+        background: url(https://t3.ftcdn.net/jpg/04/81/85/46/360_F_481854656_gHGTnBscKXpFEgVTwAT4DL4NXXNhDKU9.jpg) repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size:contain;
+    }
+    
+    #contact header {
+        background: url(https://t3.ftcdn.net/jpg/04/81/85/46/360_F_481854656_gHGTnBscKXpFEgVTwAT4DL4NXXNhDKU9.jpg) repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size:contain;
+    }
+    
+    /*_________________ Home Page _____________*/
+    
+    .main-header {
+        background-color: rgba(245, 241, 248, 0.9);
+        width: 800px;
+        margin:7px auto 7px;
+        min-height: 100px;
+        height: 100px;
+    }
+    
+    .main-header .logo img {
+        width: 139px;
+        float: left;
+    }
+    
+    /* Navigation */
+    .main-menu {
+        margin-left: 120px;
+        /* margin: auto; */
+    }
+    .main-menu ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 35px;
+        border-left: 1px solid rgba(7, 7, 7, 0.6);
+        line-height: 100px;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    
+    .main-menu ul li a {
+        text-decoration: none;
+        font-weight: 400;
+        color: #080808;
+    }
+    
+    .main-menu ul li a:hover {
+        text-decoration: none;
+        /* color: #FF7F00; */
+        color: rgb(2, 0, 0);
+        font-weight: bold;
+    }
+    
+    .main-menu ul li.active {
+        background: rgb(250, 247, 247);
+        border: none;
+    }
+    
+    .main-menu ul li.active a {
+        color: rgb(14, 13, 13);
+        font-weight: bold;
+    }
+    
+    /* Logo name */
+    #space-font, #info-box {
+        font-family: 'Montserrat', sans-serif; 
+    }
+    
+    /*_________________ PetList Page _____________*/
+    
+    #pet-gallery-container {
+        position: relative;
+    }
+    
+    #petGallery li {
+        display: inline-block;
+        text-decoration: none;
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    h1, li .name {
+        font-family: 'Bubblegum Sans', cursive;
+    }
+    
+    .description {
+        position: absolute;
+        top: 110px;
+        right: 40px;
+        width: 200px;
+        height: 50px;
+        background-color: rgba(101, 93, 93, 0.7);
+        text-align: center;
+        font-weight: 600;
+        padding-top: 25px;
+        visibility: hidden; /will not be visible on the web page until mouse hover/
+    }
+    
+    #petGallery li:hover .description {
+        visibility: visible; /Displays description over mouse hover/      
+    } 
+    
+    /* Info box */
+    #info-box {
+        width: 35%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 0.3em 1.2em;
+        color: white;
+        border-radius: 5%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+    }
+    
+    #info-box #pet-name {
+        /* font-weight: bold; */
+        font-family: 'Bubblegum Sans', cursive;
+        letter-spacing: 2px;
+    }
+    
+    #info-box #more-info {
+        font-size: 18px;
+    }
+    
+    #info-box #close-link{
+        font-size: 12px;
+        font-weight: bold;
+        color: rgba(255, 255, 0, 0.8);
+        text-align: center;
+        padding: 15% 0;
+        cursor: pointer;
+    }
+    
+    .backdrop {
+        z-index: 3;
+        opacity: .0;
+        filter: alpha(opacity=0);
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+    
+    .box {
+        z-index: 4;
+        position: fixed;
+        opacity: 1;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+        width: 600px;
+        background: #d1cfcf;
+        padding: 20px;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 5px #444444;
+        -webkit-box-shadow: 0px 0px 5px #444444;
+        box-shadow: 0px 0px 5px #444444;
+    }
+    
+    .close {
+        float: right;
+        cursor: pointer;
+    }
+    
+    .box img {
+        width: 50%;
+    }
+    
+    /*_________________ Contact Page _____________*/
+    
+    .required-field::after {
+        content: "*";
+        color: rgb(240, 236, 236);
+    }
+    
+    fieldset {
+        padding: 30px;
+        border-radius: 4px;
+        border: 3px solid #fff;
+        box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    form label, textarea {
+        display: block;
+    }
+    
+    input[type=text], input[type=email], input[type=tel], select, textarea {
+        padding: 12px 20px;
+        margin-bottom: 25px;
+        box-sizing: border-box;
+        border: 1.5px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+      }
+    
+    input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus {
+        border: 1.5px solid #555;
+      }
+    
+    input[type=submit] {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        padding: 10px 15px;
+        background-color: rgb(241, 235, 235);
+        border: 1px solid white;
+        color: white;
+        border: none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+    
+    input[type=submit]:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: rgb(252, 248, 248);
+    }
+    
+    select {
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        background-color: #ebe3e3;
+    }
+    
+    #email-input {
+        display: none;
+    }
+    
+    #phone-input {
+        display: none;
+    }
+    
+    /*_________________ Footer _____________*/
+    
+    footer {
+        background-color: rgb(152, 152, 172);
+        text-align: center;
+        margin-top: 50px;
+    } </style>
